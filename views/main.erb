@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style type="text/css">
+.myButton {
+	background-color:#44c767;
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+.myButton:hover {
+	background-color:#5cbf2a;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+</style>
+<body>
+	<div style="border:1px solid black;">
+		<h1>Welcome <%= @user.name %> to E-Chirp</h1>
+		<a href="/profile" class="myButton">EDIT PROFILE</a>
+		<a href="/logout" class="myButton">LOGOUT</a>
+		<% @usersAll.each do |u| %>
+	</div>
+
